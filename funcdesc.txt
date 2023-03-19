@@ -1,0 +1,90 @@
+Descriptions of all functions within LinkedList.py
+
+ACCESS FUNCTIONS:
+getFront():
+returns data of the front Node, or none if the list is empty
+
+getBack():
+returns data of the back Node, or none if the list is empty
+
+getCursor():
+returns data of the cursor Node, or None if cursor is undefined
+
+getNext():
+returns the data of the node after the cursor, or None if node after cursor is undefined
+
+getPrev():
+returns the data of the node before the cursor, or None if node after the cursor is undefined
+
+Index():
+returns the current cursor position. If the cursor is undefined, returns -1
+
+Length():
+returns the length of the list
+
+Equals(List L):
+Compares this list to L, returns true if equal, false otherwise
+
+
+MANIPULATION FUNCTIONS:
+append():
+Appends a Node to the back of the list
+
+prepend():
+Appends a Node to the front of the list
+
+insertAfter(x):
+If cursor is defined, inserts a new Node with data = x immediately after the cursor
+Else does nothing
+
+insertBefore():
+If cursor is defined, inserts a new Node with data = x immediately before the cursor
+Else does nothing
+
+delete():
+If cursor is defined, cursor is deleted and becomes undefined
+If cursor is not defined, or length is 0, does nothing
+
+deleteFront():
+If front is defined and not cursor, front is deleted
+If front is defined and is cursor, front is deleted and cursor becomes undefined
+Then, if length is 0: Front, Back and Cursor become undefined
+
+deleteBack():
+If back is defined and not cursor, back is deleted
+If back is defined and is cursor, back is deleted and cursor becomes undefined
+Then, if length is 0: Front, Back and Cursor become undefined
+
+clear():
+Puts the list back to an empty state.
+
+moveFront():
+If length > 0 moves the cursor to the front of the list
+Else does nothing
+
+moveBack():
+If length > 0 moves the cursor to the back of the list
+Else does nothing
+
+moveNext():
+If cursor is defined and not at back, cursor moves forward one position
+If cursor is defined and at back, cursor becomes undefined
+If cursor is undefined does nothing
+
+movePrev():
+If cursor is defined and not at front, cursor moves backward one positoon
+If cursor is defined and at front, cursor becomes undefined
+If cursor is undefined does nothing
+
+setCursor(x):
+If cursor is defined, sets data to X
+If cursor is not defined, does nothing
+
+
+OTHER FUNCTIONS:
+__str__(self):
+string representation of List
+
+__repr__(self):
+string representation of list
+(just calls __str__)
