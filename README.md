@@ -1,5 +1,5 @@
 Peter Demachkie
-LinkedList
+LinkedList and musicqueue
 https://github.com/PeterDemachkie/LinkedList
 
 Repository Contents:
@@ -12,12 +12,15 @@ Repository Contents:
 
     4) funcdesc.txt: A plaintext file outlining the functionality of each function defined in the List Class in LinkedList.py
 
+    5) musicqueue.py A client file using the List ADT to create a mock a queue like what music streaming services have
 Description:
 
     I wrote both LinkedList.py and ListTest.py as practice in writing python as well as examples to use for future reference. I may update this repository to include other data structures in python as well as other descriptions of them.
 
-How To:
+    4/12/23: Added musicqueue.py as an example of using the linkedlist to make a queue for music
 
-    In a directory containing both LinkedList.py and ListTest.py, run:
+How to run musicqueue.py:
 
-    $ python3 ListTest.py
+    In a directory containing both LinkedList.py and musicqueue.py, run:
+
+    $ python3 musicqueue.py
